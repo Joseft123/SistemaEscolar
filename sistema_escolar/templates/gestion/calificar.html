@@ -1,0 +1,8 @@
+<h2>Registrar Nueva Calificación</h2>
+
+<form method="post" style="display: flex; flex-direction: column; max-width: 300px;">
+    {% csrf_token %} {{ form.as_p }}
+    <button type="submit" style="background-color: #28a745; color: white; padding: 10px;">
+        Guardar Calificación
+    </button>
+</form>
